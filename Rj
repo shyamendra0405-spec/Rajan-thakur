@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="hi">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Guz-E-Jazbaat with RJ</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <img src="logo.png" alt="Guz-E-Jazbaat Logo" class="logo" />
+      <div>
+        <h1>Guz-E-Jazbaat</h1>
+        <p class="sub">with RJ — शायरी • ग़ज़ल • जज़्बात</p>
+      </div>
+    </div>
+    <a class="admin-link" href="admin.html" aria-label="Admin">Admin</a>
+  </header>
+
+  <main class="container">
+    <section class="intro">
+      <h2>नयी शायरी पढ़िए, महसूस कीजिए</h2>
+      <p>नीचे 'Search' से शब्द लिखकर शायरी खोजें या नीचे दिख रही शायरी पढ़ें।</p>
+      <div class="search-row">
+        <input id="search" placeholder="खोजें — शब्द लिखें..." />
+        <button id="clearSearch">Clear</button>
+      </div>
+    </section>
+
+    <section id="list" class="shayari-list" aria-live="polite"></section>
+
+    <section class="empty-note" id="emptyNote" hidden>
+      <p>अभी कोई शायरी उपलब्ध नहीं है। Admin में जाकर जोड़ें।</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    © <span id="year"></span> Guz-E-Jazbaat with RJ
+  </footer>
+
+<script src="app.js"></script>
+</body>
+</html>
